@@ -1,3 +1,4 @@
 # Ignore pecific .meta files
-LICENSE.meta
-README.meta
+LICENSE.md.meta
+README.md.meta
+
