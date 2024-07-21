@@ -13,7 +13,7 @@ Please make sure you have [Git (2.14.0+)](https://git-scm.com) installed on your
 3. Once the ZIP file has downloaded, move the folder to your Unity project's `Assets` folder and unzip it
 4. Delete the zip file if it's still present, your directory should look like this:
    
-    ```
+    ```bash
     Project
        Assets
           coderkachi.klvlgen
@@ -24,12 +24,23 @@ Please make sure you have [Git (2.14.0+)](https://git-scm.com) installed on your
 ### Step 2: Install DelaunatorSharp
 1. In the Package Manager window, click on the `+` button located on the top left corner
 2. Select `Add package from git URL...`
-3. Enter the DelaunatorSharp URL and click `Add`:
+3. Enter the DelaunatorSharp URL and click `Add`
 
     ```bash
     https://github.com/nol1fe/delaunator-sharp.git?path=DelaunatorSharp.Unity
     ```
 
+4. Your directory should now look like this:
+
+    ```bash
+    Project
+       Assets
+          coderkachi.klvlgen
+          ...
+       Packages
+          Delaunator
+          ...
+    ```
+
 ### Step 3: Success
 The latest versions of both KLVLGEN and DelaunatorSharp should be installed in your Unity project.
-
