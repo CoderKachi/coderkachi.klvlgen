@@ -43,4 +43,4 @@ Please make sure you have [Git (2.14.0+)](https://git-scm.com) installed on your
     ```
 
 ### Step 3: Success
-The latest versions of both KLVLGEN and DelaunatorSharp should be installed in your Unity project.
+The latest versions of both KLVLGEN and DelaunatorSharp should be installed in your Unity project
