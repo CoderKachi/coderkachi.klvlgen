@@ -1,8 +1,8 @@
+// DEPENDANCIES
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Configurator
 {
     // VARIABLES
@@ -11,7 +11,7 @@ public class KLVLOBJ_Configurator
     // Look at KLVLOBJ_Configuration.PracticalMinimum for explanation
     private int PracticalMinimum;
 
-    // CONSTRUCTOR
+    // CONSTRUCTORS
     public KLVLOBJ_Configurator()
     {
         Config = new KLVLOBJ_Configuration();

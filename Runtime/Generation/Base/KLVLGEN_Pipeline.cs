@@ -1,12 +1,13 @@
+// DEPENDANCIES
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// INTERFACE
+// INTERFACES
 // This is used to expose Level and Configuration to Lambda functions
 public interface IStepContext
 {
+    // VARIABLES
     KLVLOBJ_Level Level { get; }
     KLVLOBJ_Configuration Configuration { get; }
 
@@ -14,7 +15,7 @@ public interface IStepContext
     public void Output(string Message) => Debug.Log("     " + Message);
 }
 
-// CLASS
+// CLASSES
 public class KLVLGEN_Pipeline : IStepContext
 {
     // VARIABLES
@@ -41,7 +42,7 @@ public class KLVLGEN_Pipeline : IStepContext
     public void AddStep(KLVLGEN_Step Step)
     {
         // Pass a reference to the Level
-        Step.Init(this.Level, this.Configuration);
+        Step.Setup(this.Level, this.Configuration);
         this.Steps.Add(Step);
     }
 
@@ -77,12 +78,11 @@ public class KLVLGEN_Pipeline : IStepContext
         Debug.Log("[Pipeline End]");
     }
 
-    // INTERNAL METHODS
     private void RefreshSteps()
     {
         foreach (var Step in Steps)
         {
-            Step.Init(this.Level, this.Configuration);
+            Step.Setup(this.Level, this.Configuration);
         }
     }
 }

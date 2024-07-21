@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
+// DEPENDANCIES
 using System.Collections.Generic;
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Region : MonoBehaviour
 {
     // VARIABLES

@@ -1,12 +1,14 @@
-using System;
-using System.Collections;
+// DEPENDANCIES
 using System.Collections.Generic;
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Level : KLVLOBJ_Region
 {
+    // LOCAL CLASSES
     public class Visuals
     {
+        // VARIABLES
         public bool Enabled = true;
         public bool Rooms = true;
         public bool RoomsPicked = true;

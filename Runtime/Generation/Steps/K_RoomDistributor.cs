@@ -1,30 +1,28 @@
+// DEPENDANCIES
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
+// CLASSES
 public class K_RoomDistributor : KLVLGEN_Step
 {
+    // CONSTRUCTORS
     public K_RoomDistributor()
     {
         this.Name = "Room Distribution";
     }
 
-    // STEP 2
     // ROOM DISTRIBUTION
     public override void Execute()
     {
         this.Status = "In Progress";
         this.Output("Resolving intersections...");
         this.ResolveIntersections();
-        this.Output("Converging Rooms...");
+        this.Output("Converging rooms...");
         this.Convergence();
         this.Status = "Complete";
     }
 
-    // STEP 2 (Part A)
     // INTERSECTION RESOLVING
     private void ResolveIntersections()
     {
@@ -61,7 +59,6 @@ public class K_RoomDistributor : KLVLGEN_Step
         }
     }
 
-    // STEP 2 (Part B)
     // CONVERGENCE
     private void Convergence()
     {

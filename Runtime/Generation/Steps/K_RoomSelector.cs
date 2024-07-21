@@ -1,15 +1,15 @@
-using System.Collections;
+// DEPENDANCIES
 using System.Collections.Generic;
-using UnityEngine;
 
+// CLASSES
 public class K_RoomSelector : KLVLGEN_Step
 {
+    // CONSTRUCTORS
     public K_RoomSelector()
     {
         this.Name = "Room Selection";
     }
 
-    // STEP 3
     // ROOM SELECTION
     public override void Execute()
     {
@@ -18,7 +18,7 @@ public class K_RoomSelector : KLVLGEN_Step
         // Check if there are enough rooms to pick from
         if (Level.Rooms.Count < Configuration.Room.Minimum)
         {
-            this.Output("Not enough Rooms available...");
+            this.Output("Not enough rooms available...");
             this.Status = "Failed";
             return;
         }
@@ -40,8 +40,7 @@ public class K_RoomSelector : KLVLGEN_Step
         }
         Level.Rooms.Clear();
 
-        this.Output($"{Configuration.Room.Minimum} Rooms selected!");
+        this.Output($"{Configuration.Room.Minimum} rooms selected!");
         this.Status = "Complete";
     }
-
 }

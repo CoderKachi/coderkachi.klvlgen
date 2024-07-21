@@ -1,17 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+// DEPENDANCIES
 using UnityEngine;
 
+// CLASSES
 public class K_RoomGenerator : KLVLGEN_Step
 {
+    // CONSTRUCTORS
     public K_RoomGenerator()
     {
         this.Name = "Room Generation";
     }
 
-    // STEP 1
     // ROOM GENERATION
     public override void Execute()
     {
@@ -23,7 +21,7 @@ public class K_RoomGenerator : KLVLGEN_Step
         int MaxRooms = SectionsWidth  * SectionsDepth;
 
         // Create the rooms
-        this.Output("Creating Rooms...");
+        this.Output("Creating rooms...");
         for (int i = 0; i < MaxRooms; i++)
         {
             // Randomly select Dimension (Vector2)
@@ -36,7 +34,7 @@ public class K_RoomGenerator : KLVLGEN_Step
             // Add to the list
             Level.Rooms.Add(CurrentRoom);
         }
-        this.Output($"{Level.Rooms.Count} Rooms created!");
+        this.Output($"{Level.Rooms.Count} rooms created!");
         this.Status = "Complete";
     }
 }

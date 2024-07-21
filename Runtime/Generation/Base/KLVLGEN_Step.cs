@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+// DEPENDANCIES
 using UnityEngine;
 
+// CLASSES
 public abstract class KLVLGEN_Step
 {
     // PROPERTIES
@@ -12,7 +12,7 @@ public abstract class KLVLGEN_Step
     public KLVLOBJ_Configuration Configuration;
 
     // METHODS
-    public virtual void Init(KLVLOBJ_Level Level, KLVLOBJ_Configuration Configuration)
+    public virtual void Setup(KLVLOBJ_Level Level, KLVLOBJ_Configuration Configuration)
     {
         this.Level = Level;
         this.Configuration = Configuration;

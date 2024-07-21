@@ -1,20 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+// CLASSES
 public class K_PathwayGeneration : KLVLGEN_Step
 {
+    // CONSTRUCTORS
     public K_PathwayGeneration()
     {
         this.Name = "Pathway Generation";
     }
 
-    // STEP 5
     // PATHWAY GENERATION
     public override void Execute()
     {
         this.Status = "In Progress";
-        this.Output("Creating Pathways...");
+        this.Output("Creating pathways...");
 
         foreach (KLVLOBJ_Connection Connection in Level.ConnectionsPicked)
         {

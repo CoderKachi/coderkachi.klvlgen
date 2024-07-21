@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+// DEPENDANCIES
 using UnityEngine;
 
+// EXAMPLE CLASS
 // This class is for testing purposes and shows how to utilise the Level Generator
 public class KLVLTRIGGER : MonoBehaviour
 {

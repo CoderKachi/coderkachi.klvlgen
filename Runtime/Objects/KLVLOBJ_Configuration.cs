@@ -1,9 +1,11 @@
-using System.Collections;
+// DEPENDANCIES
 using System.Collections.Generic;
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Configuration
 {
+    // LOCAL CLASSES
     public class RoomGeneration
     {
         // DYNAMIC

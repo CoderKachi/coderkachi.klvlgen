@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+// DEPENDANCIES
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Room : KLVLOBJ_Region
 {
     // INSTANCE FACTORY

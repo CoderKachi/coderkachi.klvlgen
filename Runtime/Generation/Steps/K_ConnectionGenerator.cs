@@ -1,25 +1,27 @@
+// DEPENDANCIES
 using System.Collections.Generic;
-using UnityEngine;
 
+// CLASSES
 public class K_ConnectionGenerator : KLVLGEN_Step
 {
+    // CONSTRUCTORS
     public K_ConnectionGenerator()
     {
         this.Name = "Connection Generation";
     }
 
-    // STEP 4
     // CONNECTION GENERATION
     public override void Execute()
     {
         this.Status = "In Progress";
-        this.Output("Creating Connections...");
+        this.Output("Creating connections...");
         MinimumConnections();
-        this.Output("Recyling discarded Connections...");
+        this.Output("Recyling discarded connections...");
         ConnectionRecycling();
         this.Status = "Complete";
     }
 
+    // METHODS
     private void MinimumConnections()
     {
         // Create connections between all the Rooms that were picked
@@ -72,8 +74,8 @@ public class K_ConnectionGenerator : KLVLGEN_Step
         }
 
         Level.ConnectionsPicked = MinimumConnections;
-        this.Output($"{Connections.Count} Connections created!");
-        this.Output($"{Level.ConnectionsPicked.Count} Connections selected!");
+        this.Output($"{Connections.Count} connections created!");
+        this.Output($"{Level.ConnectionsPicked.Count} connections selected!");
 
         Level.ConnectionsDiscarded = new List<KLVLOBJ_Connection>();
         foreach (var Connection in Connections)
@@ -83,7 +85,7 @@ public class K_ConnectionGenerator : KLVLGEN_Step
                 Level.ConnectionsDiscarded.Add(Connection);
             }
         }
-        this.Output($"{Level.ConnectionsDiscarded.Count} Connections discarded!");
+        this.Output($"{Level.ConnectionsDiscarded.Count} connections discarded!");
     }
 
     private void ConnectionRecycling()
@@ -100,7 +102,7 @@ public class K_ConnectionGenerator : KLVLGEN_Step
             Level.ConnectionsDiscarded.RemoveAt(RandomIndex);
         }
 
-        this.Output($"{Total} Connections recycled!");
+        this.Output($"{Total} connections recycled!");
     }
     
 }

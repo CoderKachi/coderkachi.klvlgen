@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+// DEPENDANCIES
 using UnityEngine;
 
+// CLASSES
 public class KLVLOBJ_Connection
 {
+    // VARIABLES
     protected KLVLOBJ_Region _R0;
     protected KLVLOBJ_Region _R1;
 

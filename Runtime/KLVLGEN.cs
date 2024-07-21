@@ -1,10 +1,10 @@
-using System.CodeDom.Compiler;
-using System.Collections;
+// DEPENDANCIES
 using System.Collections.Generic;
 using System.Linq;
 using DelaunatorSharp;
 using UnityEngine;
 
+// CLASSES
 public static class KLVLGEN
 {
     // METHODS
