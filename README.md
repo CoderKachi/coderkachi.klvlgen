@@ -4,7 +4,7 @@ A 3D Grid-Based Procedural Level Layout Generator Framework for Indie Game Devel
 
 ## Installation
 Follow the guide below to install the latest versions of both KLVLGEN and [DelaunatorSharp](https://github.com/nol1fe/delaunator-sharp) via Git.  
-Please make sure you have [Git (2.14.0+)](https://git-scm.com) installed on your machine, otherwise the Package Manager will not be able to retrieve either package.
+Please make sure you have [Git (2.14.0+)](https://git-scm.com) installed on your machine, otherwise the Package Manager will not be able to retrieve Delauanator.
 <br />
 
 ### Step 1: Download and Install KLVLGEN
